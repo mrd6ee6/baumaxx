@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="rysunek budowlany.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
