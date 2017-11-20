@@ -118,7 +118,7 @@
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
             <div class="w3-col m3">
-                <img src="/images.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dom jednorodzinny">
+                <img src="/images.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="1">
             </div>
 
             <div class="w3-col m3">
@@ -133,7 +133,7 @@
                 <img src="/images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="4">
             </div>
         </div>
-
+        <!--
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">
                 <img src="/images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="5">
@@ -150,8 +150,8 @@
             <div class="w3-col m3">
                 <img src="/images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="8">
             </div>
-           <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
-        </div>
+           <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> 
+        </div>-->
     </div>
 
     <!-- Modal for full size images on click-->
@@ -173,7 +173,8 @@
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
         <!--<h3 class="w3-center">BAUMAXX Katarzyna Pokrzywnicka</h3>-->
-        <p class="w3-center"><em>Adres: E. Zegadłowicza 37B/1</em></p>
+        <p class="w3-center"><em>Adres:</em></p>
+        <p class="w3-center"><em>E. Zegadłowicza 37B/1</em></p>
         <p class="w3-center"><em>50-226 Wrocław</em></p>
 
         <div class="w3-row w3-padding-32 w3-section">
@@ -188,7 +189,7 @@
                     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: biuro@baumaxx.pl<br>
                 </div>
                 <p>Jeśli jesteś zainteresowany, zostaw wiadomość:</p>
-                <form action="/action_page.php" target="_blank">
+                <form action="mailto:biuro@baumaxx.pl" method="post">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
                             <input class="w3-input w3-border" type="text" placeholder="Kto?" required name="Kto?">
