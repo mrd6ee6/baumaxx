@@ -68,7 +68,7 @@
   <ItemGroup>
     <Content Include="images\architektura-miast.jpg" />
     <Content Include="packages.config" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\nazwa.pl.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
