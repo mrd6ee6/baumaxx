@@ -94,10 +94,12 @@
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">O MNIE</h3>
         <p class="w3-center w3-xlarge"><em>mgr inż. Katarzyna Pokrzywnicka</em></p>
+        <p class="w3-center"><em>- projekty rozbiórek (pełna dokumentacja)</em></p>
+        <p class="w3-center"><em>- zgłoszenia rozbiórek</em></p>
         <p class="w3-center"><em>- projekty</em></p>
         <p class="w3-center"><em>- inwentaryzacje obiektów</em></p>
         <p class="w3-center"><em>- kosztorysy</em></p>
-        <p class="w3-center"><em>- przeglądy techniczne obiektów</em></p>
+        <p class="w3-center"><em>- przeglądy techniczne obiektów (roczne i pięcioletnie)</em></p>
         <p class="w3-center"><em>- nadzór autorski</em></p>
 
     </div>
@@ -151,7 +153,7 @@
             <div class="w3-col m3">
                 <img src="/images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="8">
             </div>
-           <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> 
+           <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
         </div>-->
     </div>
 
@@ -216,52 +218,51 @@
 
     <!-- Add Google Maps -->
     <script>
-function myMap()
-{
-    myCenter = new google.maps.LatLng(51.1294782, 17.0320019);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+        function myMap() {
+            myCenter = new google.maps.LatLng(51.1294782, 17.0320019);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12, scrollwheel: false, draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+            }
+        }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGtBWAHo29KmuJpqGbwam-BXn-3XXXCL4&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB19MEoC1r-hUx6m_Fk0hoSGbt4mbvisDM&callback=myMap"></script>
     <!--
     To use this code on your website, get a free API key from Google.
     Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
